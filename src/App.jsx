@@ -1,5 +1,5 @@
-import RifatPortfolio from './Portfolio'
+import Portfolio from "./Portfolio";
 
 export default function App() {
-    return <RifatPortfolio />
+    return <Portfolio />;
 }

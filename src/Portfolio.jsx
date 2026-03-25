@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-
 export default function RifatPortfolio() {
     const experience = [
         {
@@ -129,7 +126,7 @@ export default function RifatPortfolio() {
             <nav className="fixed top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-xl">
                 <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
                     <div className="text-base font-bold text-foreground">
-                        Rifat Yusuf
+                        MD Rifat Bin Yusuf
                     </div>
 
                     <div className="hidden gap-8 text-sm font-medium md:flex">
@@ -160,10 +157,10 @@ export default function RifatPortfolio() {
                     </div>
 
                     <a
-                        href="#experience"
+                        href="#contact"
                         className="rounded-lg bg-foreground/5 px-4 py-2 text-xs font-semibold text-foreground hover:bg-foreground/15"
                     >
-                        Learn More
+                        Contact
                     </a>
                 </div>
             </nav>
@@ -171,7 +168,7 @@ export default function RifatPortfolio() {
             <section className="px-6 pb-20 pt-32">
                 <div className="mx-auto max-w-3xl text-center">
                     <h1 className="mb-4 text-5xl font-extrabold leading-tight text-foreground sm:text-6xl md:text-7xl">
-                        Rifat Yusuf
+                        MD Rifat Bin Yusuf
                     </h1>
 
                     <h2 className="mb-6 text-2xl font-semibold text-muted-foreground sm:text-3xl">
@@ -184,13 +181,19 @@ export default function RifatPortfolio() {
                     </p>
 
                     <div className="flex flex-wrap justify-center gap-4">
-                        <Button
-                            size="lg"
-                            className="bg-white text-black transition-all duration-150 hover:bg-gray-200 active:scale-95"
-                            asChild
+                        <a
+                            href="#contact"
+                            className="inline-block rounded-lg bg-white px-6 py-3 text-sm font-semibold text-black transition-all duration-150 hover:bg-gray-200 active:scale-95"
                         >
-                            <a href="#contact">Get in Touch</a>
-                        </Button>
+                            Get in Touch
+                        </a>
+
+                        <a
+                            href="#projects"
+                            className="inline-block rounded-lg border border-foreground/30 px-6 py-3 text-sm font-semibold text-foreground hover:bg-foreground/10"
+                        >
+                            View Projects
+                        </a>
                     </div>
                 </div>
             </section>
@@ -214,7 +217,7 @@ export default function RifatPortfolio() {
                     <div className="relative space-y-10 border-l border-border pl-8">
                         {experience.map((exp, idx) => (
                             <div key={idx} className="relative">
-
+                                <span className="absolute -left-[38px] top-7 h-4 w-4 rounded-full border-4 border-background bg-primary"></span>
 
                                 <div className="rounded-2xl border border-border bg-card p-6 shadow-lg transition-all duration-300 hover:shadow-xl">
                                     <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
@@ -304,15 +307,15 @@ export default function RifatPortfolio() {
 
                     <div className="space-y-4">
                         {projects.map((project, idx) => (
-                            <Card
+                            <div
                                 key={idx}
-                                className="border-l-4 border-l-foreground bg-card p-6 transition-shadow hover:shadow-lg"
+                                className="rounded-2xl border-l-4 border-l-foreground bg-card p-6 transition-shadow hover:shadow-lg"
                             >
                                 <p className="flex items-center gap-3 text-lg text-foreground">
                                     <span className="text-2xl text-foreground">◆</span>
                                     {project}
                                 </p>
-                            </Card>
+                            </div>
                         ))}
                     </div>
                 </div>
@@ -321,11 +324,11 @@ export default function RifatPortfolio() {
             <section id="contact" className="px-6 py-24">
                 <div className="mx-auto max-w-3xl text-center">
                     <span className="text-sm font-semibold uppercase tracking-widest text-foreground">
-                        Final Call
+                        Contact
                     </span>
 
                     <h2 className="mb-6 mt-4 text-4xl font-extrabold text-foreground md:text-5xl">
-                        Ready to push your growth skyward?
+                        Let’s Work Together
                     </h2>
 
                     <p className="mb-10 text-lg leading-relaxed text-muted-foreground">
@@ -334,19 +337,25 @@ export default function RifatPortfolio() {
                     </p>
 
                     <div className="flex flex-col justify-center gap-4 sm:flex-row">
-                        <Button
-                            size="lg"
-                            className="bg-primary text-primary-foreground hover:bg-primary/90"
-                            asChild
+                        <a
+                            href="mailto:rifat5437@gmail.com"
+                            className="inline-block rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90"
                         >
-                            <a href="mailto:rifat5437@gmail.com">Work with me</a>
-                        </Button>
+                            Work with me
+                        </a>
+
+                        <a
+                            href="tel:+61447820442"
+                            className="rounded-lg border border-border px-6 py-3 text-sm font-semibold text-foreground hover:bg-foreground/10"
+                        >
+                            Call Me
+                        </a>
                     </div>
                 </div>
             </section>
 
             <footer className="border-t border-border bg-background px-6 py-8 text-center text-sm text-muted-foreground">
-                <p>© 2026 MD Rifat Bin Yusuf. Designed for impact.</p>
+                <p>© 2026 MD Rifat Bin Yusuf</p>
             </footer>
         </div>
     );
