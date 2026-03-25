@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+
 export default function RifatPortfolio() {
     const experience = [
         {
@@ -49,15 +52,68 @@ export default function RifatPortfolio() {
     const skillGroups = [
         {
             title: "Digital Marketing",
-            items: ["SEO", "SEM", "Content Marketing", "Email Marketing", "Google Analytics", "Social Media", "Keyword Research", "Technical Writing"],
+            items: [
+                "SEO",
+                "SEM",
+                "Google Ads",
+                "Meta Ads",
+                "Email Marketing",
+                "Content Marketing",
+                "Keyword Research",
+                "Google Analytics",
+                "A/B Testing",
+                "Campaign Strategy",
+                "Social Media Marketing",
+                "KPI & ROI Reporting",
+            ],
         },
         {
-            title: "Development & AI",
-            items: ["Python", "SQL", "JavaScript", "PHP", "Laravel", "WordPress", "LLaMA", "LangChain", "FAISS", "ChromaDB", "Docker", "Kubernetes"],
+            title: "Web Development",
+            items: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React",
+                "Tailwind CSS",
+                "Bootstrap",
+                "PHP",
+                "Laravel",
+                "WordPress",
+                "Vite",
+                "API Integration",
+                "Responsive Design",
+            ],
         },
         {
-            title: "Media",
-            items: ["Premiere Pro", "Photoshop", "Lightroom", "Short-form Video", "Drone Videography"],
+            title: "AI, Data & Automation",
+            items: [
+                "Python",
+                "SQL",
+                "AI Chatbots",
+                "LangChain",
+                "LLaMA",
+                "Embeddings",
+                "Semantic Search",
+                "Vector Databases",
+                "FAISS",
+                "ChromaDB",
+                "Workflow Automation",
+                "Data Visualization",
+            ],
+        },
+        {
+            title: "Content & Media",
+            items: [
+                "Adobe Premiere Pro",
+                "Adobe Photoshop",
+                "Adobe Lightroom",
+                "Short-form Video Editing",
+                "Long-form Video Editing",
+                "Drone Videography",
+                "Technical Writing",
+                "Content Writing",
+                "Creative Direction",
+            ],
         },
     ];
 
@@ -69,110 +125,161 @@ export default function RifatPortfolio() {
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-slate-900">
-            {/* Navigation */}
-            <nav className="fixed top-0 w-full backdrop-blur-md bg-white/10 border-b border-white/10 z-50">
-                <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-                    <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Rifat</h1>
-                    <div className="flex gap-8 text-sm font-medium text-slate-300">
-                        <a href="#experience" className="hover:text-blue-400 transition">Experience</a>
-                        <a href="#skills" className="hover:text-blue-400 transition">Skills</a>
-                        <a href="#projects" className="hover:text-blue-400 transition">Projects</a>
-                        <a href="#contact" className="hover:text-blue-400 transition">Contact</a>
+        <div className="min-h-screen bg-background text-foreground">
+            <nav className="fixed top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-xl">
+                <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+                    <div className="text-base font-bold text-foreground">
+                        Rifat Yusuf
                     </div>
+
+                    <div className="hidden gap-8 text-sm font-medium md:flex">
+                        <a
+                            href="#experience"
+                            className="text-foreground/80 transition-all duration-200 hover:text-foreground"
+                        >
+                            Experience
+                        </a>
+                        <a
+                            href="#skills"
+                            className="text-foreground/80 transition-all duration-200 hover:text-foreground"
+                        >
+                            Skills
+                        </a>
+                        <a
+                            href="#projects"
+                            className="text-foreground/80 transition-all duration-200 hover:text-foreground"
+                        >
+                            Projects
+                        </a>
+                        <a
+                            href="#contact"
+                            className="text-foreground/80 transition-all duration-200 hover:text-foreground"
+                        >
+                            Contact
+                        </a>
+                    </div>
+
+                    <a
+                        href="#experience"
+                        className="rounded-lg bg-foreground/5 px-4 py-2 text-xs font-semibold text-foreground hover:bg-foreground/15"
+                    >
+                        Learn More
+                    </a>
                 </div>
             </nav>
 
-            {/* Hero Section */}
-            <section className="pt-32 pb-20 px-6 relative overflow-hidden">
-                <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl"></div>
-                <div className="relative max-w-4xl mx-auto text-center">
-                    <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-400/30 rounded-full">
-                        <span className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
-                        <span className="text-sm font-medium text-slate-300">Available for opportunities</span>
-                    </div>
-                    <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-slate-100 to-blue-200 bg-clip-text text-transparent leading-tight">
-                        Digital Marketing <br /> & AI Innovator
+            <section className="px-6 pb-20 pt-32">
+                <div className="mx-auto max-w-3xl text-center">
+                    <h1 className="mb-4 text-5xl font-extrabold leading-tight text-foreground sm:text-6xl md:text-7xl">
+                        Rifat Yusuf
                     </h1>
-                    <p className="text-xl text-slate-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-                        Combining digital marketing expertise with software engineering to create innovative solutions. Based in Tasmania, with global experience.
+
+                    <h2 className="mb-6 text-2xl font-semibold text-muted-foreground sm:text-3xl">
+                        Digital Marketing Analyst | AI Tools | Web Development
+                    </h2>
+
+                    <p className="mb-10 text-lg leading-relaxed text-muted-foreground">
+                        I build data-driven marketing systems and AI-powered web solutions
+                        that deliver measurable business impact.
                     </p>
-                    <div className="flex gap-4 justify-center">
-                        <a href="mailto:rifat5437@gmail.com" className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition">
-                            Get in Touch
-                        </a>
-                        <a href="tel:0447820442" className="px-8 py-3 border-2 border-slate-400 text-slate-300 rounded-lg font-semibold hover:border-blue-400 hover:text-blue-400 transition">
-                            Call: 0447 820 442
-                        </a>
+
+                    <div className="flex flex-wrap justify-center gap-4">
+                        <Button
+                            size="lg"
+                            className="bg-white text-black transition-all duration-150 hover:bg-gray-200 active:scale-95"
+                            asChild
+                        >
+                            <a href="#contact">Get in Touch</a>
+                        </Button>
                     </div>
                 </div>
             </section>
 
-            {/* Experience Section */}
-            <section id="experience" className="py-20 px-6 bg-gradient-to-b from-transparent via-slate-800/50 to-transparent">
-                <div className="max-w-4xl mx-auto">
-                    <div className="mb-16">
-                        <span className="text-blue-400 font-semibold text-sm">MY JOURNEY</span>
-                        <h2 className="text-4xl md:text-5xl font-bold mt-2 text-white">Professional Experience</h2>
-                        <p className="text-slate-400 mt-4">Roles that shaped my expertise in marketing and technology</p>
+            <section id="experience" className="px-6 py-20">
+                <div className="mx-auto max-w-4xl">
+                    <div className="mb-16 flex flex-col items-center text-center">
+                        <span className="text-sm font-semibold uppercase tracking-[0.2em] text-foreground/70">
+                            Experience
+                        </span>
+
+                        <h2 className="mt-3 text-4xl font-bold text-foreground md:text-5xl">
+                            Professional Experience
+                        </h2>
+
+                        <p className="mt-4 max-w-2xl text-base text-muted-foreground">
+                            Roles that shaped my expertise in marketing and technology
+                        </p>
                     </div>
-                    <div className="space-y-6">
+
+                    <div className="relative space-y-10 border-l border-border pl-8">
                         {experience.map((exp, idx) => (
-                            <div key={idx} className="group glass-effect rounded-2xl p-8 hover:bg-white/15 transition-all duration-300 cursor-pointer transform hover:scale-105 hover:-translate-y-1">
-                                <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
-                                    <div>
-                                        <h3 className="text-2xl font-bold text-white mb-2">{exp.role}</h3>
-                                        <p className="text-lg text-blue-400 font-semibold mb-1">{exp.company}</p>
-                                        <p className="text-sm text-slate-400">{exp.location} • {exp.period}</p>
+                            <div key={idx} className="relative">
+
+
+                                <div className="rounded-2xl border border-border bg-card p-6 shadow-lg transition-all duration-300 hover:shadow-xl">
+                                    <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                                        <div>
+                                            <h3 className="text-xl font-bold text-foreground">
+                                                {exp.role}
+                                            </h3>
+                                            <p className="text-sm text-muted-foreground">
+                                                {exp.company} • {exp.location}
+                                            </p>
+                                        </div>
+
+                                        <span className="text-sm font-medium text-foreground/70">
+                                            {exp.period}
+                                        </span>
                                     </div>
+
+                                    <ul className="mt-4 space-y-2 text-muted-foreground">
+                                        {exp.points.map((point, i) => (
+                                            <li key={i} className="flex gap-2">
+                                                <span className="font-bold text-primary">•</span>
+                                                <span>{point}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
                                 </div>
-                                <ul className="mt-6 space-y-3">
-                                    {exp.points.map((point, i) => (
-                                        <li key={i} className="flex gap-3 text-slate-300">
-                                            <span className="text-purple-400 font-bold mt-1">→</span>
-                                            <span className="leading-relaxed">{point}</span>
-                                        </li>
-                                    ))}
-                                </ul>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* Education */}
-            <section className="py-16 px-6">
-                <div className="max-w-4xl mx-auto">
-                    <h3 className="text-2xl font-bold text-white mb-8">Education</h3>
-                    <div className="grid md:grid-cols-2 gap-6">
-                        <div className="glass-effect rounded-xl p-6 hover:bg-white/15 transition">
-                            <h4 className="text-lg font-bold text-white">Master of IT & Systems</h4>
-                            <p className="text-blue-400 font-semibold text-sm mt-2">University of Tasmania, Hobart</p>
-                            <p className="text-slate-400 text-sm mt-1">Feb 2025 – Oct 2026</p>
-                        </div>
-                        <div className="glass-effect rounded-xl p-6 hover:bg-white/15 transition">
-                            <h4 className="text-lg font-bold text-white">Bachelor of Science in CS</h4>
-                            <p className="text-blue-400 font-semibold text-sm mt-2">North South University, Dhaka</p>
-                            <p className="text-slate-400 text-sm mt-1">2020 – 2024</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <section id="skills" className="px-6 py-24">
+                <div className="mx-auto max-w-6xl">
+                    <div className="mb-14 flex flex-col items-center text-center">
+                        <span className="text-sm font-semibold uppercase tracking-[0.2em] text-foreground/70">
+                            Expertise
+                        </span>
 
-            {/* Skills Section */}
-            <section id="skills" className="py-20 px-6 bg-gradient-to-b from-transparent via-slate-800/50 to-transparent">
-                <div className="max-w-5xl mx-auto">
-                    <div className="mb-16">
-                        <span className="text-purple-400 font-semibold text-sm">EXPERTISE</span>
-                        <h2 className="text-4xl md:text-5xl font-bold mt-2 text-white">Skills & Technologies</h2>
+                        <h2 className="mt-3 text-4xl font-bold text-foreground md:text-5xl">
+                            Skills & Capabilities
+                        </h2>
+
+                        <p className="mt-4 max-w-2xl text-base leading-7 text-muted-foreground">
+                            A mix of marketing, development, AI, analytics, and content
+                            production.
+                        </p>
                     </div>
-                    <div className="grid md:grid-cols-3 gap-8">
+
+                    <div className="grid gap-6 md:grid-cols-2">
                         {skillGroups.map((group, idx) => (
-                            <div key={idx} className="glass-effect rounded-2xl p-8 hover:bg-white/15 transition-all transform hover:scale-105 hover:-translate-y-2">
-                                <h3 className="text-xl font-bold text-white mb-6">{group.title}</h3>
+                            <div
+                                key={idx}
+                                className="rounded-3xl border border-border bg-card/60 p-7 shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md"
+                            >
+                                <h3 className="mb-5 text-xl font-semibold text-foreground">
+                                    {group.title}
+                                </h3>
+
                                 <div className="flex flex-wrap gap-3">
-                                    {group.items.map((item, i) => (
-                                        <span key={i} className="px-4 py-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-400/30 text-slate-200 rounded-full text-sm font-medium hover:border-blue-400/60 hover:bg-blue-500/20 transition">
+                                    {group.items.map((item, itemIdx) => (
+                                        <span
+                                            key={itemIdx}
+                                            className="rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-foreground/90 transition-all duration-200 hover:bg-foreground hover:text-background"
+                                        >
                                             {item}
                                         </span>
                                     ))}
@@ -183,51 +290,62 @@ export default function RifatPortfolio() {
                 </div>
             </section>
 
-            {/* Projects Section */}
-            <section id="projects" className="py-20 px-6">
-                <div className="max-w-4xl mx-auto">
-                    <div className="mb-16">
-                        <span className="text-blue-400 font-semibold text-sm">PORTFOLIO</span>
-                        <h2 className="text-4xl md:text-5xl font-bold mt-2 text-white">Featured Projects</h2>
+            <section id="projects" className="px-6 py-20">
+                <div className="mx-auto max-w-4xl">
+                    <div className="mb-16 flex flex-col items-center text-center">
+                        <span className="text-sm font-semibold uppercase tracking-[0.2em] text-foreground/70">
+                            Projects
+                        </span>
+
+                        <h2 className="mt-3 text-4xl font-bold text-foreground md:text-5xl">
+                            Featured Projects
+                        </h2>
                     </div>
+
                     <div className="space-y-4">
                         {projects.map((project, idx) => (
-                            <div key={idx} className="glass-effect rounded-xl p-6 hover:bg-white/15 transition-all group cursor-pointer border-l-4 border-l-blue-400/50 hover:border-l-purple-400">
-                                <p className="text-lg text-slate-200 flex items-center gap-3">
-                                    <span className="text-purple-400 text-2xl">◆</span>
+                            <Card
+                                key={idx}
+                                className="border-l-4 border-l-foreground bg-card p-6 transition-shadow hover:shadow-lg"
+                            >
+                                <p className="flex items-center gap-3 text-lg text-foreground">
+                                    <span className="text-2xl text-foreground">◆</span>
                                     {project}
                                 </p>
-                            </div>
+                            </Card>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* Contact Section */}
-            <section id="contact" className="py-24 px-6 relative">
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-500/10 to-transparent pointer-events-none"></div>
-                <div className="relative max-w-2xl mx-auto text-center">
-                    <span className="text-purple-400 font-semibold text-sm">GET IN TOUCH</span>
-                    <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-8 text-white">
-                        Let's create something amazing
+            <section id="contact" className="px-6 py-24">
+                <div className="mx-auto max-w-3xl text-center">
+                    <span className="text-sm font-semibold uppercase tracking-widest text-foreground">
+                        Final Call
+                    </span>
+
+                    <h2 className="mb-6 mt-4 text-4xl font-extrabold text-foreground md:text-5xl">
+                        Ready to push your growth skyward?
                     </h2>
-                    <p className="text-xl text-slate-400 mb-12 leading-relaxed">
-                        I'm always interested in hearing about new projects and opportunities in digital marketing, web development, and AI innovation.
+
+                    <p className="mb-10 text-lg leading-relaxed text-muted-foreground">
+                        Let’s build digital experiences and campaigns that drive measurable
+                        ROI, engagement, and brand authority.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="mailto:rifat5437@gmail.com" className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-xl hover:shadow-blue-500/50 transition transform hover:scale-105">
-                            Email Me
-                        </a>
-                        <a href="tel:0447820442" className="px-8 py-4 border-2 border-slate-400 text-slate-300 rounded-lg font-semibold hover:border-blue-400 hover:text-blue-400 transition transform hover:scale-105">
-                            Call Me
-                        </a>
-                        <span className="px-8 py-4 text-slate-300 font-medium">📍 Claremont, TAS</span>
+
+                    <div className="flex flex-col justify-center gap-4 sm:flex-row">
+                        <Button
+                            size="lg"
+                            className="bg-primary text-primary-foreground hover:bg-primary/90"
+                            asChild
+                        >
+                            <a href="mailto:rifat5437@gmail.com">Work with me</a>
+                        </Button>
                     </div>
                 </div>
             </section>
 
-            {/* Footer */}
-            <footer className="border-t border-white/10 py-8 px-6 text-center text-slate-500 text-sm">
+            <footer className="border-t border-border bg-background px-6 py-8 text-center text-sm text-muted-foreground">
                 <p>© 2026 MD Rifat Bin Yusuf. Designed for impact.</p>
             </footer>
         </div>
