@@ -172,7 +172,7 @@ export default function RifatPortfolio() {
                     </h1>
 
                     <h2 className="mb-6 text-2xl font-semibold text-muted-foreground sm:text-3xl">
-                        Digital Marketing Analyst | AI Tools | Web Development
+                        Digital Marketing, AI & Web Development
                     </h2>
 
                     <p className="mb-10 text-lg leading-relaxed text-muted-foreground">
